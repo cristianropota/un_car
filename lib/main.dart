@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app/custom/ExMap.dart';
 import 'package:my_first_app/custom/MaterialColorCustom.dart';
 
 void main() {
@@ -9,6 +10,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    ExMap.exempluMap();
+
     return MaterialApp(
       title: 'Uncar',
       theme: ThemeData(
