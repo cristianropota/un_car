@@ -1,9 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_first_app/controller/UncarLoginForm.dart';
 import 'package:my_first_app/custom/MaterialColorCustom.dart';
-import 'package:my_first_app/pages/UncarAddPage.dart';
 
-class UncarHomePage extends StatelessWidget{
+class UncarLoginPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
@@ -16,8 +15,8 @@ class UncarHomePage extends StatelessWidget{
           shadowColor: MaterialColorCustom.createMaterialColor(Color(0xFF1b557a)),
 
         ),
-        body: Text("Main Page add something"),
-        floatingActionButton: FloatingActionButton(
+        body: UncarLoginForm(),
+        /*floatingActionButton: FloatingActionButton(
             child: Text("Adauga"),
             onPressed: () {
               Navigator.push(
@@ -25,7 +24,7 @@ class UncarHomePage extends StatelessWidget{
                 MaterialPageRoute(builder: (context) =>UncarAddPage()),
               );
             }
-        ),
+        ),*/
       ),
     );
   }
