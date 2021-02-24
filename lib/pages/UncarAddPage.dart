@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_first_app/custom/MaterialColorCustom.dart';
+import 'package:my_first_app/pages/UncarHomePage.dart';
 
 class UncarAddPage extends StatelessWidget {
   @override
@@ -16,7 +17,10 @@ class UncarAddPage extends StatelessWidget {
       body: Center(
         child: FloatingActionButton(
           onPressed: () {
-            Navigator.pushNamed(context, "/");
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) =>UncarHomePage()),
+            );
           },
           child: Text('Back'),
         ),
