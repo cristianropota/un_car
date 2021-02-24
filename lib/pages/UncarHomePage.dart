@@ -16,7 +16,19 @@ class UncarHomePage extends StatelessWidget{
           shadowColor: MaterialColorCustom.createMaterialColor(Color(0xFF1b557a)),
 
         ),
-        body: Text("Main Page add something"),
+        body: Center(
+            child: FlatButton(
+              child: Text("Logout",
+                  style: TextStyle(color: Colors.red)
+
+              ),
+
+                onPressed: () {
+                  Navigator.pushNamed(context, "/");
+                }
+            )
+
+        ),
         floatingActionButton: FloatingActionButton(
             child: Text("Adauga"),
             onPressed: () {
@@ -26,6 +38,7 @@ class UncarHomePage extends StatelessWidget{
               );
             }
         ),
+
       ),
     );
   }
